@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Polaroid Character Profile</title>
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap" rel="stylesheet">
+  <style>
+    body {
+      background: #fdfaf6;
+      font-family: 'Quicksand', sans-serif;
+      display: flex;
+      justify-content: center;
+      padding: 40px;
+    }
+
+    .card {
+      background: white;
+      border-radius: 20px;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+      padding: 20px;
+      max-width: 800px;
+      width: 100%;
+    }
+
+    .top-section {
+      display: flex;
+      gap: 20px;
+      align-items: flex-start;
+    }
+
+    .polaroid {
+      background: #fff;
+      padding: 10px 10px 25px;
+      border: 1px solid #ccc;
+      box-shadow: 2px 4px 10px rgba(0,0,0,0.2);
+      width: 200px;
+      transform: rotate(-2deg);
+      flex-shrink: 0;
+    }
+
+    .polaroid img {
+      width: 100%;
+      display: block;
+      border: 1px solid #e0e0e0;
+    }
+
+    .polaroid-note {
+      text-align: center;
+      font-size: 14px;
+      color: #999;
+      margin-top: 8px;
+    }
+
+    .info {
+      flex: 1;
+    }
+
+    .info h2 {
+      color: #b15e5b;
+      margin: 0 0 10px;
+    }
+
+    .info p {
+      margin: 4px 0;
+      font-size: 14px;
+      color: #555;
+    }
+
+    .bottom-section {
+      margin-top: 20px;
+    }
+
+    .bubble {
+      border-radius: 20px;
+      padding: 10px 15px;
+      background-color: #f7f7f7;
+      position: relative;
+      margin-top: 15px;
+    }
+
+    .bubble.life::before {
+      content: "Life";
+      font-size: 12px;
+      color: #fff;
+      background: #a3dbe3;
+      border-radius: 15px;
+      padding: 2px 8px;
+      position: absolute;
+      top: -10px;
+      left: 15px;
+    }
+
+    .bubble.story::before {
+      content: "Story";
+      font-size: 12px;
+      color: #fff;
+      background: #e8b4a6;
+      border-radius: 15px;
+      padding: 2px 8px;
+      position: absolute;
+      top: -10px;
+      left: 15px;
+    }
+
+    .bubble:hover {
+      background-color: #ececec;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+
+<div class="card">
+  <!-- Atas: Polaroid + Info -->
+  <div class="top-section">
+    <div class="polaroid">
+      <img src="VERA.png" alt="Sylus Photo">
+      <div class="polaroid-note">memory</div>
+    </div>
+
+    <div class="info">
+      <h2>➤ Sylus</h2>
+      <p><strong>Age:</strong> 28</p>
+      <p><strong>Height:</strong> 6'2"</p>
+      <p><strong>Birthday:</strong> Apr. 18th</p>
+      <p><strong>Sign:</strong> Aries</p>
+      <p><strong>Job:</strong> Onychinus's Leader</p>
+      <p><strong>Evol:</strong> Energy Manipulation</p>
+      <p><strong>Workplace:</strong> Onychinus</p>
+    </div>
+  </div>
+
+  <!-- Bawah: Bubble Chat -->
+  <div class="bottom-section">
+    <div class="bubble life">Someone with such terri...</div>
+    <div class="bubble story">There's a terrifying pow...</div>
+  </div>
+</div>
+
+</body>
+</html>
