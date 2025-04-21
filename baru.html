@@ -78,7 +78,7 @@
       margin-top: 15px;
     }
 
-    .bubble.life::before {
+    /* .bubble.life {
       content: "Life";
       font-size: 12px;
       color: #fff;
@@ -88,18 +88,33 @@
       position: absolute;
       top: -10px;
       left: 15px;
+    } */
+    .chip.maroon{
+        background-color: rgb(139, 34, 34);
     }
-
-    .bubble.story::before {
-      content: "Story";
-      font-size: 12px;
-      color: #fff;
-      background: #e8b4a6;
-      border-radius: 15px;
-      padding: 2px 8px;
-      position: absolute;
-      top: -10px;
-      left: 15px;
+    .chip.red{
+        background-color:red;
+    }
+    .chip {
+        font-size: 12px;
+        color: #fff;
+        /* background: #e8b4a6; */
+        border-radius: 15px;
+        padding: 2px 8px;
+        position: absolute;
+        top: -7px;
+        left: 15px;
+    }
+    .bubble.story {
+        content: "Story";
+        font-size: 12px;
+        color: #fff;
+        background: #e8b4a6;
+        border-radius: 15px;
+        padding: 2px 8px;
+        position: absolute;
+        top: -10px;
+        left: 15px;
     }
 
     .bubble:hover {
@@ -114,16 +129,19 @@
   <!-- Atas: Polaroid + Info -->
   <div class="top-section">
     <div class="polaroid">
-      <img src="VERA.png" alt="Sylus Photo">
+      <img src="/images/assets/VERA.png" alt="Sylus Photo">
       <div class="polaroid-note">memory</div>
     </div>
 
     <div class="info">
-      <h2>➤ Sylus</h2>
-      <p><strong>Age:</strong> 28</p>
-      <p><strong>Height:</strong> 6'2"</p>
+      <h2>➤ Vera Nataria</h2>
+      <p><strong>Nim:</strong> 231110030</p>
+      <p><strong>Major:</strong> Computer Science</p>
+      <p><strong>Batch:</strong> 2023</p>
+      <p><strong>Age:</strong> 19</p>
+      <p><strong>Height:</strong> 150cm</p>
       <p><strong>Birthday:</strong> Apr. 18th</p>
-      <p><strong>Sign:</strong> Aries</p>
+      <p><strong>Sign:</strong> Gemini</p>
       <p><strong>Job:</strong> Onychinus's Leader</p>
       <p><strong>Evol:</strong> Energy Manipulation</p>
       <p><strong>Workplace:</strong> Onychinus</p>
@@ -132,8 +150,24 @@
 
   <!-- Bawah: Bubble Chat -->
   <div class="bottom-section">
-    <div class="bubble life">Someone with such terri...</div>
-    <div class="bubble story">There's a terrifying pow...</div>
+    <div class="bubble life">
+        <div class="chip red">
+            About Me
+        </div>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi aspernatur, similique sapiente fugiat molestiae non illo assumenda in, iure enim sit et sunt, maxime quod reiciendis soluta natus tempore autem!
+        </p>
+    
+    </div>
+    
+    <div class="bubble">
+        <div class="chip maroon">
+            My Fav
+        </div>
+        <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Velit, accusantium, dignissimos, commodi excepturi neque expedita voluptates assumenda reprehenderit corrupti iusto ducimus. Vitae quo laudantium doloribus labore fugit optio, doloremque accusantium?
+        </p>
+    </div>
   </div>
 </div>
 
