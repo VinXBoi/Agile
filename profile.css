@@ -1,0 +1,168 @@
+body {
+  background: linear-gradient(135deg, #fdfaf6, #f0f4f8);
+  font-family: 'Quicksand', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
+  padding: 40px;
+}
+
+.card {
+  background: white;
+  border-radius: 20px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  max-width: 800px;
+  width: 100%;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.2);
+}
+
+.top-section {
+  display: flex;
+  gap: 20px;
+  align-items: flex-start;
+}
+
+.polaroid {
+  background: #fff;
+  padding: 10px 10px 25px;
+  border: 1px solid #ccc;
+  box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.2);
+  width: 200px;
+  transform: rotate(-2deg);
+  flex-shrink: 0;
+  transition: transform 0.3s ease;
+}
+
+.polaroid:hover {
+  transform: rotate(0deg) scale(1.05);
+}
+
+.polaroid img {
+  width: 100%;
+  display: block;
+  border: 1px solid #e0e0e0;
+  border-radius: 10px;
+}
+
+.polaroid-note {
+  text-align: center;
+  font-size: 14px;
+  color: #999;
+  margin-top: 8px;
+}
+
+.info {
+  flex: 1;
+  animation: fadeIn 1s ease-in-out;
+}
+
+.info h2 {
+  color: #b15e5b;
+  margin: 0 0 10px;
+  font-size: 24px;
+  transition: color 0.3s ease;
+}
+
+.info h2:hover {
+  color: #8cb15b;
+}
+
+.info p {
+  margin: 4px 0;
+  font-size: 14px;
+  color: #555;
+}
+
+.info.tere {
+  flex: 1;
+}
+
+.info.tere h2 {
+  color: #23aaf9;
+  margin: 0 0 10px;
+  font-size: 24px;
+  transition: color 0.3s ease;
+}
+
+.info.tere h2:hover {
+  color: #8cb15b;
+}
+
+.info.tere p {
+  margin: 4px 0;
+  font-size: 14px;
+  color: #555;
+}
+
+.bottom-section {
+  margin-top: 20px;
+}
+
+.bubble {
+  border-radius: 20px;
+  padding: 10px 15px;
+  background-color: #f7f7f7;
+  position: relative;
+  margin-top: 15px;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.bubble:hover {
+  background-color: #ececec;
+  cursor: pointer;
+  transform: scale(1.05);
+}
+
+.chip {
+  font-size: 12px;
+  color: #fff;
+  border-radius: 15px;
+  padding: 2px 8px;
+  position: absolute;
+  top: -7px;
+  left: 15px;
+  transition: background-color 0.3s ease;
+}
+
+.chip.maroon {
+  background-color: #B3261E;
+}
+
+.chip.red {
+  background-color: #D12323;
+}
+
+.chip.blue {
+  background-color: rgb(31, 31, 224);
+}
+
+.bubble.story {
+  content: "Story";
+  font-size: 12px;
+  color: #fff;
+  background: #e8b4a6;
+  border-radius: 15px;
+  padding: 2px 8px;
+  position: absolute;
+  top: -10px;
+  left: 15px;
+}
+
+@keyframes fadeIn {
+  from {
+      opacity: 0;
+      transform: translateY(20px);
+  }
+  to {
+      opacity: 1;
+      transform: translateY(0);
+  }
+}
